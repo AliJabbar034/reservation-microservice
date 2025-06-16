@@ -1,0 +1,17 @@
+
+@BASE_URL=http://localhost:3000
+@TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVmNGQyZTAxLWE2ODgtNDhiZC1iNzgwLTkxYjBmZTEzZDhlYyIsImVtYWlsIjoiam9obi5kb2UxQGV4YW1wbGUuY29tIiwiZXhwaXJlc0luIjozNjAwMCwiaWF0IjoxNzUwMDY4OTI0LCJleHAiOjE3NTAxMDQ5MjR9.zBLmGSB-jBJd-5x1cAblWDhDZ8NVJf6J7yNZVH4pfbU
+
+
+### Create Reservation
+POST {{BASE_URL}}/reservation
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+    "placeId": "1",
+    "userId": "1",
+    "startDate": "2021-01-01",
+    "endDate": "2021-01-05",
+    "status": "pending"
+}
