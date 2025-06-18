@@ -1,6 +1,6 @@
 
 @BASE_URL=http://localhost:3000
-@TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVmNGQyZTAxLWE2ODgtNDhiZC1iNzgwLTkxYjBmZTEzZDhlYyIsImVtYWlsIjoiam9obi5kb2UxQGV4YW1wbGUuY29tIiwiZXhwaXJlc0luIjozNjAwMCwiaWF0IjoxNzUwMDY4OTI0LCJleHAiOjE3NTAxMDQ5MjR9.zBLmGSB-jBJd-5x1cAblWDhDZ8NVJf6J7yNZVH4pfbU
+@TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVmNGQyZTAxLWE2ODgtNDhiZC1iNzgwLTkxYjBmZTEzZDhlYyIsImVtYWlsIjoiam9obi5kb2UxQGV4YW1wbGUuY29tIiwiZXhwaXJlc0luIjozNjAwMCwiaWF0IjoxNzUwMjMwMDkyLCJleHAiOjE3NTAyNjYwOTJ9.SUmXAiv3ktC-v9yubOWrptf7VrnPOHr8XjdZT3Cel-E
 
 
 ### Create Reservation
@@ -10,8 +10,7 @@ Authorization: Bearer {{TOKEN}}
 
 {
     "placeId": "1",
-    "userId": "1",
-    "startDate": "2021-01-01",
-    "endDate": "2021-01-05",
+    "startDate": "2025-06-18",
+    "endDate": "2025-06-20",
     "status": "pending"
 }

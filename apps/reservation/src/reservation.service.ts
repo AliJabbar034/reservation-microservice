@@ -11,10 +11,12 @@ export class ReservationService {
     private readonly reservationRepository: Repository<Reservation>,
   ) {}
 
-  async create(createReservationDto: CreateReservationDto) {
+  async create(createReservationDto: CreateReservationDto, userId: string) {
     try {
-      const reservation =
-        this.reservationRepository.create(createReservationDto);
+      const reservation = this.reservationRepository.create({
+        ...createReservationDto,
+        userId,
+      });
       return this.reservationRepository.save(reservation);
     } catch (error) {
       console.log(error);

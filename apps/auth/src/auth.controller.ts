@@ -18,8 +18,7 @@ export class AuthController {
   @UseGuards(JwtAuthGuard)
   async getUser(@Payload() data: any) {
     try {
-      console.log(data);
-      return { isValid: true, user: data };
+      return { isValid: true, user: data?.user };
     } catch (error) {
       return { isValid: false, message: error.message };
     }

@@ -7,10 +7,6 @@ export class CreateReservationDto {
   placeId: string;
 
   @IsNotEmpty()
-  @IsString()
-  userId: string;
-
-  @IsNotEmpty()
   @IsDate()
   @Transform(({ value }) => new Date(value))
   startDate: Date;
